@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" type="text/css" href="firstPageStyle.css">
+<script src="jquery.min.js"></script>
+<script src="angular.js"></script>
+<script src="angular-route.js"></script>
+<script src="firstPageJs.js"></script>
+
+<body ng-app="compareApp">
+<!--
+	
+	
+		<div id="contentTable"  ng-controller="compareController">
+			
+			<div style="width:100%;float:left;">
+				<ul>	
+					<li ng-repeat="parameter in Classes"><a href="" ng-click="showTable(parameter)">
+						 {{parameter}}</a>
+					</li>
+				</ul>
+			</div>
+			</br>
+			<div style="width:100%;float:left;">
+				<ul style="float:left;padding-right:30px;">	
+					<li ng-repeat="parameter in Parameters"><a href="" ng-click="showProducts(parameter.$id)">
+						 {{parameter.name}}</a>
+					</li>
+				</ul>
+				<ul style="float:left;">	
+					<li ng-repeat="parameter in Parameters2"><a href="" ng-click="showProducts1(parameter.$id)">
+						 {{parameter.name}}</a>
+					</li>
+				</ul>
+			</div>
+			</br>
+			<div style="width:100%;float:left;">
+				<ul style="float:left;padding-right:30px;">	
+					<li ng-repeat="(key,parameter) in Parameters1">
+						 {{key}} : {{parameter}}
+					</li>
+				</ul>
+				<ul style="float:left;">	
+					<li ng-repeat="(key,parameter) in Parameters3">
+						 {{key}} : {{parameter}}
+					</li>
+				</ul>
+			</div>
+		</div>-->
+		
+		<div id="page"  ng-controller="compareController">
+			<div id="rightContainer">
+				<div id="rightMenuBar">
+					<div id="rightEndPointsContainer">
+						<ul id="rightEndPoints">
+							<li>
+								<a href="" ng-click="createList1(1)">Test1</a>
+							</li>
+							<li>
+								<a href="" ng-click="createList1(2)">Test2</a>
+							</li>
+						</ul>
+					</div>
+					<div id="rightClassesContainer">
+						<ul id="rightClasses">	
+							<li ng-repeat="parameter in Classes">
+								<a href="" ng-click="showTable(parameter)">{{parameter}}</a>
+							</li>
+						</ul>
+					</div>
+					<div id="rightNames">
+						<ul id="rightNames">	
+							<li ng-repeat="parameter in Parameters">
+								<a href="" ng-click="showProducts(parameter.$id)">{{parameter.name}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="rightDisplayBar">
+					
+				</div>
+			</div>
+		
+		</div>
+</body>
+
+
+</html>
